@@ -6,11 +6,14 @@ using System.Text;
 
 namespace SafariParkApp
 {
-    public class Vehicle
+    public class Vehicle : Imovable
     {
         private int _capacity;
         private int _numPassengers;
+        private int _position;
 
+        public int Position { get; private set; }
+        public int Speed { get; init; }
         public int NumPassengers
         {
             get { return _numPassengers; }
@@ -26,26 +29,29 @@ namespace SafariParkApp
                 }
             }
         }
-
-        public int Position
+        public Vehicle(int capacity)
         {
-            get;
-            private set;
-        } = 0;
+            _capacity = capacity;
+        }
 
-        public int Speed
+        public int Capacity
         {
-            get;
-            init;
-        } = 10;
+            get { return _capacity; }
+            set { _capacity = value; }
+        }
+        protected int Distance
+        {
+            get { return _position; }
+            set { _position = value; }
+        }
 
-        public string Move()
+        public virtual string Move()
         {
             Position += Speed;
             return "Moving along";
         }
 
-        public string Move(int times)
+        public virtual string Move(int times)
         {
             Position = Speed * times;
             return $"Moving along {times} times";
@@ -54,6 +60,7 @@ namespace SafariParkApp
         {
 
         }
+       
         public Vehicle(int capacity, int speed = 10)
         {
             _capacity = capacity;

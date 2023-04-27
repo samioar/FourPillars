@@ -5,11 +5,15 @@ using System.Text;
 
 namespace SafariParkApp
 {
-    public class Person
+    public class Person : Vehicle
     {
         private string FirstName { get; init; } = "";
         private string LastName { get; init; } = "";
         private int _age;
+        public int distance;
+       
+        
+            
         public int Age 
         {
             get { return _age; }
@@ -34,6 +38,12 @@ namespace SafariParkApp
             FirstName = firstName;
         }
 
+        public Person(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            
+        }
 
         public string FullName => $"{FirstName} {LastName}";
     }

@@ -37,6 +37,15 @@ namespace SafariParkApp
             FirstName = firstName;
         }
 
-        public string FullName => $"{FirstName} {LastName}";
+        public string GetFullName()
+        {
+            return $"{FirstName} {LastName}";
+        }
+        //public string FullName => $"{FirstName} {LastName}";
+
+        public override string ToString()
+        {
+            return $"{ base.ToString()} Name: {GetFullName()} Age: {Age}";
+        }
     }
 }
