@@ -21,5 +21,14 @@ namespace VehicleTests
             Assert.AreEqual(40, v.Position);
             Assert.AreEqual("Moving along", result);
         }
+        [Test]
+        public void WhenNewWeapon_ReturnsCorrectString()
+        {
+            string Brand = "Airsoft Gun";
+            WaterPistol waterPistol = new WaterPistol("Airsoft Gun");
+            
+
+            
+        }
     }
 }

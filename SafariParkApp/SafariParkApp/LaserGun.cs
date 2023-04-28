@@ -8,13 +8,8 @@ namespace SafariParkApp
 {
     public class LaserGun : Weapon, IShootable
     {
-       
         public override string Shoot() 
         { return $"{base.Shoot()} Ziiiiiiiing!! "; }
-
-        public LaserGun(string brand) : base(brand)
-        {
-        
-        }
+        public LaserGun(string brand) : base(brand) {}
     }
 }

@@ -3,9 +3,10 @@
   <Class Name="SafariParkApp.Person">
     <Position X="3" Y="1" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAIAAAEAAAAAAAEAAAAgAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAEAAAAAAAIQEgEAAAAAAAEAAAIgAAAAAAAAAAig=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SafariParkApp.Weapon">
     <Position X="8.5" Y="0.75" Width="1.5" />
@@ -18,7 +19,7 @@
   <Class Name="SafariParkApp.Hunter">
     <Position X="3.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hunter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -42,7 +43,7 @@
   <Class Name="SafariParkApp.Camera">
     <Position X="3.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAFAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAABAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Camera.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

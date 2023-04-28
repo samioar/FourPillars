@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace SafariParkApp
 {
-    public class WaterPistol : Weapon , IShootable
+    public class WaterPistol : Weapon , IShootable //inherits weapon class
     {
         public override string Shoot() { return $"{base.Shoot()} Spprrrrt!! "; }
 
-        public  WaterPistol(string brand) : base(brand)
-        {
-         
-        }
+        public  WaterPistol(string brand) : base(brand) {}
+
     }
 }
+//type of weapon

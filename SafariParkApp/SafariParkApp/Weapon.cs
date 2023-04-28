@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SafariParkApp
 {
-    public abstract class Weapon :IShootable
+    public abstract class Weapon :IShootable //interfaces with IShootable 
     {
         private string _brand;
 
@@ -18,13 +18,11 @@ namespace SafariParkApp
         public virtual string Shoot()
         {
             return $"has exercised their 2nd ammendment right and fired his {_brand}";
-        }
-
-        //public override string ToString()
-        //{
-        //    return base.ToString();
-        //}
-        
-
+        }// defines shoot method differently
     }
 }
+
+//public override string ToString()
+//{
+//    return base.ToString();
+//}
